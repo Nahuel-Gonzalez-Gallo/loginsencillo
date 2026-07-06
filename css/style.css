@@ -1,0 +1,192 @@
+html{
+    font-size: 62.5%;
+}
+
+
+:root{
+    --primary-color-bg: rgb(255,255,255);
+    --secondary-color-bg: rgb(12,12,12);
+
+    --primary-color-font: rgb(255,255,255);
+    --secondary-color-font: rgb(12,12,12);
+
+    --shadow-color: black;
+    --shadow-offset-y: 1.0rem;
+    --shadow-blur: 0.7rem;
+
+    --default-border-radius: 1.5rem;
+    --default-border-size: 0.1rem;
+
+    --small-font-size: 1.2rem;
+    --medium-font-size: 2.0rem;
+    --large-font-size: 3.2rem;
+    --very-large-font-size: 8.0rem;
+
+    --very-small-separation-size: 1.2rem;    
+    --small-separation-size: 1.2rem;
+    --medium-separation-size: 2.0rem;
+    --large-separation-size: 3.2rem;
+    --very-large-separation-size: 8.0rem;
+
+    --medium-object-width: 34rem;
+    --large-object-width: 56rem;
+
+    --social-media-icons: 2.5rem;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color:var(--secondary-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-image: 
+        repeating-linear-gradient(rgba(0, 0, 255, 0.5), rgba(87, 212, 196, 0.5)),
+        url("/content/images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 100%;
+
+}
+
+
+header{
+    background-color: var(--primary-color-bg);
+    padding: var(--medium-separation-size);
+    display: flex;
+    justify-content:space-between;  
+    box-shadow: 0px var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color);
+
+}
+
+footer{
+    display:grid;
+}
+
+footer p{
+    color:var(--secondary-color-font);
+    justify-self: center;
+    font-size: var(--medium-font-size);
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--small-font-size);
+}
+
+
+
+nav a{
+    margin: var(--small-separation-size);
+    font-size: var(--medium-font-size);
+}
+
+
+
+
+h1{
+    color: var(--primary-color-font);
+    margin-top: var(--medium-separation-size);
+    font-size: var(--very-large-font-size);
+    text-shadow: 0px var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color);
+    justify-self: center;
+    text-align: center;
+}  
+
+
+
+
+
+
+a img{
+    width  : var(--social-media-icons);
+    height : var(--social-media-icons);
+    mix-blend-mode:normal;
+}
+
+a img:hover{
+    filter: saturate(0%) contrast(100) opacity(77.3%);
+}
+
+
+a:hover {
+    color:var(--secondary-color-font);
+}
+
+
+
+#cerrar_sesion{
+    color:var(--secondary-color-font);
+    background-color: var(--primary-color-bg);
+    border-color: var(--primary-color-bg);
+
+    border-style: solid;
+    border-radius: var(--default-border-radius);
+    border-width: var(--default-border-size);
+    justify-content: center;
+
+    margin-top:var(--medium-separation-size);
+    font-size: var(--medium-font-size);
+    width: var(--medium-object-width);
+    box-shadow: 0px var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color);
+
+}
+
+section{
+    background-color: var(--primary-color-bg);
+    border-color: var(--primary-color-bg);
+
+    margin:var(--medium-separation-size);
+    margin-top:var(--very-large-separation-size);
+
+    padding: var(--small-separation-size);
+
+
+    border-style: solid;
+    border-radius: var(--default-border-radius);
+    border-width: var(--default-border-size);
+
+
+    box-shadow: 0px var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color);
+
+    display: flex;
+    justify-content:space-between;  
+}
+
+section img{
+    box-shadow: 0px var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color);
+    border-radius: var(--default-border-radius);
+    width: var(--large-object-width);
+}
+
+#registro_image{
+    width:var(--large-object-width);
+
+    justify-self: center;
+    display: block;
+    margin: auto;
+}
+
+form *{
+    display: flex;
+    margin-top:var(--very-small-separation-size);
+
+}
+form label, #registro, form a{
+    margin-top:var(--medium-separation-size);
+    font-size: var(--medium-font-size);
+}
+
+input {
+    width: var(--medium-object-width);
+    border-radius: var(--default-border-radius);
+    justify-content: center;
+    margin-right: var(--small-separation-size);
+}
+
+input *{
+    margin-left: var(--small-separation-size);
+}
